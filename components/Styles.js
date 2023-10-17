@@ -1,6 +1,10 @@
 import { StyleSheet } from "react-native";
 
 const styles = StyleSheet.create({
+    title: {
+        color: '#fff',
+        fontSize: 34,
+    },
     center: {
         marginTop: '3rem',
         gap: 10,
@@ -11,8 +15,8 @@ const styles = StyleSheet.create({
     },
     space: {
         flexDirection: 'row',
-        justifyContent: 'center',
-        gap: '.9rem',
+        justifyContent: 'space-between',
+        width: '45%',
     },
     font: {
         color: '#fff',

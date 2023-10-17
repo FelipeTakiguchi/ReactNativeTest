@@ -3,7 +3,7 @@ import { Switch } from "react-native-gesture-handler";
 import { styles } from "./Styles";
 import { useState } from "react";
 
-export default function Cadastro() {
+export default function Cadastro(props) {
     const [isEnabled, setIsEnabled] = useState(false);
     const toggleSwitch = () => setIsEnabled(previousState => !previousState);
 
@@ -50,7 +50,7 @@ export default function Cadastro() {
                 </View>
             </View>
             <Button
-                onPress={() => props.navigation.navigate("Login")}
+                onPress={() => props.navigation.navigate("login")}
                 title="Cadastrar"
             >
             </Button>
