@@ -10,13 +10,12 @@ const styles = StyleSheet.create({
         gap: 10,
         flexDirection: 'column',
         alignItems: 'center',
-        width: '170%',
-        marginLeft: '-35%',
     },
     space: {
         flexDirection: 'row',
-        justifyContent: 'space-between',
         width: '45%',
+        gap: '1rem',
+        justifyContent: 'center'
     },
     font: {
         color: '#fff',
@@ -26,6 +25,12 @@ const styles = StyleSheet.create({
         backgroundColor: '#fff',
         color: '#ff3fdd',
         borderRadius: '.3rem',
+    },
+    wrapInput: {
+        backgroundColor: '#fff',
+        color: '#ff3fdd',
+        borderRadius: '.3rem',
+        width: '21.8vw',
     },
     align: {
         justifyContent: 'flex-start',
