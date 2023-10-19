@@ -3,10 +3,21 @@ import { Switch } from "react-native-gesture-handler";
 import { styles } from "./Styles";
 import { useContext, useState } from "react";
 import { usersContext } from "../context/UserContext";
+import api from "../api";
 
 export default function Cadastro(props) {
     const { name, setName, age, setAge, gender, setGender, email, setEmail, password, setPassword,
         confirmPassword, setConfirmPassword, notify, setNotify, addUser, reset } = useContext(usersContext);
+
+    async function testeApi(){
+        try{
+            const response = await api.get("/");
+            alert(response.data);
+            return "funfou";
+        } catch(error){
+            return error;
+        }
+    }
 
     const [isEnabled, setIsEnabled] = useState(false);
 
